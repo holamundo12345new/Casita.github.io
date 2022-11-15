@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {font-family: "HelveticaNeue Condensed"; 
+    src: url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.eot"); 
+    src: url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/6a12e5049ae8cddc625f33b184eb0e5b.svg#HelveticaNeue Condensed") 
+    format("svg"); 
+}
+
+* {
+    letter-spacing: 1px;
+    font-family: "HelveticaNeue Condensed";
+    font-weight: 600;
+}
+
+.bgRed {
+    background: #ed1c27 !important;
+}
+
+.bgRedHover {
+    background: #ad0000 !important;
+}
+
+.btnRed {
+    color: white;
+    box-shadow: inset 0 -4px 0 0 #ad0000 !important;
+}
+.btnGray {
+  box-shadow: inset 0 -4px 0 0 #c1bdbc;
+}
+
+
+.fade {
+    transition: opacity 0.15s linear;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade {
+      transition: none;
+    }
+  }
+  .fade:not(.show) {
+    opacity: 0;
+  }
+  
+  .collapse:not(.show) {
+    display: none;
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .collapsing {
+      transition: none;
+    }
+  }
+  .collapsing.collapse-horizontal {
+    width: 0;
+    height: auto;
+    transition: width 0.35s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .collapsing.collapse-horizontal {
+      transition: none;
+    }
+  }
+
+.fn * {
+  font-weight: 400;
+}
+.f-security * {
+  color: #61717e;
+}
+.fn-b {
+  font-weight: 600;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.bgFondoSuperior {
+  background: #6D6E72;
+}
+
+@media (min-width: 768px) {
+  .bgFondoSuperior {
+    background-image: url('./assets/fondoLogin.jpg');
+    background-repeat: 'round';
+    background-size: cover;
+    background-position: center;
+  }
+  
+}
